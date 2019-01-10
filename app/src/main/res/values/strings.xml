@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Nhanh Như Chớp</string>
+    <string name="button">button</string>
+    <string name="text">text</string>
+    <string name="progressbar">progressbar</string>
+    <string name="play">PLAY</string>
+    <string name="create">CREATE</string>
+    <string name="highscore">HIGH SCORE</string>
+</resources>

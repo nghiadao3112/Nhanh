@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="100dp">
+    <TextView
+        android:id="@+id/tv_id"
+        android:background="#fbc1f0"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:textSize="50dp"
+        android:textStyle="normal"
+        android:text="1"
+        android:gravity="center"
+        android:textColor="#57389f" />
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Question" />
+        <TextView
+            android:id="@+id/tv_trueAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:text="True Answer" />
+        <TextView
+            android:id="@+id/tv_wrongAnswer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:text="Wrong Answer 1" />
+        <TextView
+            android:id="@+id/tv_wrongAnswer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:text="Wrong Answer 2" />
+        <TextView
+            android:id="@+id/tv_wrongAnswer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:text="Wrong Answer 3" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

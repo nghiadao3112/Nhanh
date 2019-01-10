@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/btn_A"
+        android:background="@drawable/answerbutton"
+        android:layout_width="273dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:textSize="11dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ShowQuest" />
+
+    <Button
+        android:id="@+id/btn_B"
+        android:background="@drawable/answerbutton"
+        android:layout_width="273dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:textSize="11dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ShowQuest" />
+
+    <Button
+        android:id="@+id/btn_C"
+        android:background="@drawable/answerbutton"
+        android:layout_width="273dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:textSize="11dp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_A" />
+
+    <Button
+        android:id="@+id/btn_D"
+        android:background="@drawable/answerbutton"
+        android:layout_width="273dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:textSize="11dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_B" />
+
+    <ProgressBar
+        android:id="@+id/pB_True_Answer"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="344dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.731"
+        app:layout_constraintStart_toEndOf="@+id/pB_True_Answer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_ShowQuest"
+        android:layout_width="523dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/questionbutton"
+        android:gravity="center"
+        android:textColor="#f4f5f7"
+        android:textSize="13dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pB_True_Answer" />
+
+    <com.github.lzyzsd.circleprogress.ArcProgress
+
+        android:id="@+id/pB_Show_Time"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#214193"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        custom:arc_bottom_text="TIME"
+        custom:arc_bottom_text_size="5dp"
+        custom:arc_suffix_text="S"
+        custom:arc_suffix_text_size="5dp"
+        custom:arc_text_size="15dp" />
+
+
+</android.support.constraint.ConstraintLayout>
